@@ -1,7 +1,78 @@
-.header-comment{
+.header{
     background-image: url('https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_1280.jpg');
+    position: relative;
+    height: 300px;
+}
+.nav-link{
+    font-family: serif;
+    font-size: medium;
 }
 .header-comment h3{
+    position: absolute;
+    top:40%;
+    left:20%;
+    bottom: 30%;
+    color: bisque;
     font-size: 38px;
     font-family: serif;
+    opacity:0.6;
+}
+.header-comment h4{
+    position: absolute;
+    top:60%;
+    left:38%;
+    bottom: 30%;
+    color: bisque;
+    font-size: 28px;
+    font-family: serif;
+    opacity:0.6;
+}
+.title{
+    font-family: serif;
+}
+.col-sm-10{
+    display: inline-block;
+}
+.myface{
+    border-radius: 50%;
+    height: 130px;
+    width: 130px;
+    float: left;
+}
+#intro{
+
+}
+.col-sm-10{
+    font-size: 28px;
+    font-family: serif;
+    font-weight: bolder;
+    list-style: none;
+}
+#title{
+    height: 300px;
+}
+.content-title{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 36px;
+}
+.content-text{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 28px;
+    list-style:none;
+}
+#card-group{
+    height:200px;
+}
+.card-title{
+    font-size: 36px;
+    font-family: serif;
+    font-weight: bolder;
+    text-shadow: seashell;
+}
+.card-text{
+    font-size: 20px;
+    font-family: serif;
+    font-weight: bolder;
 }
