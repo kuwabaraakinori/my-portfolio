@@ -1,3 +1,10 @@
+body{
+    height: 100%;
+}
+.wrapper{
+    min-height: 100%;
+}
+
 .header{
     background-image: url('https://cdn.pixabay.com/photo/2016/08/03/09/03/universe-1566159_1280.jpg');
     position: relative;
@@ -23,47 +30,107 @@
     left:38%;
     bottom: 30%;
     color: bisque;
-    font-size: 28px;
+    font-size: 20px;
     font-family: serif;
     opacity:0.6;
+}
+.main{
+    height: 100%;
+}
+.container-intro{
+    background-color: wheat;
+    margin: auto;
+}
+.container-skill{
+    background-color: thistle;
+    margin: auto;
+}
+.container-work{
+    background-color: whitesmoke;
+    margin: auto;
+}
+.container-questions{
+    background-color: yellow;
+    margin: auto;
+}
+.footer{
+    /*background-color: teal;*/
+    margin: auto;
+}
+.col{
+    margin:15px;
 }
 .title{
     font-family: serif;
 }
-.col-sm-10{
-    display: inline-block;
+
+/*スライドショー*/
+.intro-face{
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    position: relative;
 }
-.myface{
+.slide{
+    list-style: none;
+    width:10000px;
+
+
+}
+.slide-img{
+    float:left;
     border-radius: 50%;
     height: 130px;
     width: 130px;
-    float: left;
 }
-#intro{
+.nav-btn{
+    list-style: none;
+}
+.nav-btn.prev{
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    margin-top: -25px;
+}
+.nav-btn.next{
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    margin-top: -25px;
+}
+/* スライドショーここまで*/
 
+#intro{
+    height: auto;
 }
-.col-sm-10{
-    font-size: 28px;
+.col-lg-10{
+    font-size: 18px;
     font-family: serif;
     font-weight: bolder;
+    margin: 0 auto;
+    display:flex;
     list-style: none;
+}
+.row{
+    margin: auto;
 }
 #title{
     height: 300px;
 }
-.content-title{
+.card-title{
     font-family: serif;
     font-weight: bolder;
     font-size: 36px;
 }
-.content-text{
+.card-text{
     font-family: serif;
     font-weight: bolder;
-    font-size: 28px;
+    font-size: 18px;
     list-style:none;
 }
 #card-group{
     height:200px;
+    width: 80%;
 }
 .card-title{
     font-size: 36px;
@@ -76,3 +143,142 @@
     font-family: serif;
     font-weight: bolder;
 }
+.card-text{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*質問jQuery練習*/
+.col-sm-10{
+    margin: 0 auto;
+}
+.list-questions{
+    padding-left: 0;
+}
+.each{
+    list-style: none;
+    margin:10px;
+    cursor:pointer;
+    border-bottom:1px solid #ccc;
+}
+.each span{
+    right:10px;
+    top: 0px;
+    position: abolute;
+}
+.text-questions{
+    margin: 10px;
+    font-family: serif;
+    font-weight: bolder;
+}
+.text-answer{
+    margin: 10px;
+    font-family: serif;
+    font-weight: bolder;
+    display: none;
+}
+/*質問jQuery練習ここまで*/
+.contact-text{
+    font-family: serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+/*footerここから*/
+#icon{
+    /*display: inline-block;
+*/
+}
+.col-sm-4{
+    text-align: center;
+}
+
+
+
+/*モーダルはここから*/
+.contact-modal{
+    position: fixed;
+    z-index: 100;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+.modal{
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+}
+.fa-times{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    color: rgba(63, 60, 60, 0.46);
+    cursor: pointer;
+}
+
+
+/*お問い合わせ開始*/
+.card-form{
+    margin: auto;
+}
+.contact-form{
+    margin: auto;
+}
+.contact-title{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-family: serif;
+}
+.contact-form input{
+    margin-bottom: 20px;
+    font-size: 12px;
+    padding: 12px 12px;
+    border: 1px solid #d0d5d8;
+    border-radius: 5px;
+}
+.contact-btn{
+    width: 300px;
+    border-radius: 3px;
+    padding: 14px 140px;
+    background-color: #5dca88;
+    display: inline-block;
+    margin: 10px auto;
+    cursor: pointer;
+}
+.contact-btn , p{
+    display: inline;
+    font-family: serif;
+    font-weight: bolder;
+}
+
+/*お問い合わせフォーム終わり*/
+
+
+#button{
+    background-color: yellowgreen;
+    border-radius: 3px;
+    font-family: serif;
+    font-weight: bolder;
+    cursor: pointer;
+    box-shadow: 0px 7px #1a7940;
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#button:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+/*モーダルはここまで*/
+
+/*footerここまで*/
