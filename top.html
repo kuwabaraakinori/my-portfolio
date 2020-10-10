@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://unpkg.com/sanitize.css" rel="stylesheet"/>
     <script src="js/jquery-3.5.1min.js"></script>
     <script src="js/top.js"></script>
     <title>Nori's Portfolio2</title>
@@ -46,7 +47,6 @@
                         </h3>
                     </div>
                     <div class="col-lg-10">
-                        <!--スライドショー練習-->
                         <div class="intro-face">
                             <ul class="slide">
                                 <li class="slide-img" src="/img/myface.jpg"></li>
@@ -58,8 +58,10 @@
                                 <li class="next"><i class="fab fa-mixer"></i></li>
                             </div>
                         </div>
-                        <!--スライドショー練習はここまで-->
-                        <div class="intro offset-4" id=intro>
+                        <div class="intro-face">
+                            <img src="img/myface.jpg" class="myface">
+                        </div>
+                        <div class="card offset-4" id=intro>
                             <ul>
                                 <p class="col-lg-10 mb-4">名前：桑原　彰理</p>
                                 <p class="col-lg-10 mb-4">学歴：東京外国語大学国際社会学部南アジア地域専攻</p>
@@ -239,13 +241,15 @@
                                 <div class="close-modal">
                                     <i class="fa fa-2x fa-times"></i>
                                 </div>
-                                <form action="#" class="contact-form">
-                                    <h2 class="contact-title">お問い合わせ</h2>
-                                    <input type="text" name="name" class="form-control" placeholder="名前">
-                                    <input type="text" name="email" class="form-control" placeholder="E-mail">
-                                    <input type="textarea" name="content" class="form-control" placeholder="お問い合わせ内容">
-                                    <button type="submit" class="contact-btn"><p>送信する</p></button>
-                                </form>
+                                <div id="form-contact">
+                                    <form action="#">
+                                        <h2 class="contact-title">お問い合わせ</h2>
+                                        <input type="text" name="name" class="form-control" placeholder="名前">
+                                        <input type="text" name="email" class="form-control" placeholder="E-mail">
+                                        <input type="textarea" name="content" class="form-control" placeholder="お問い合わせ内容">
+                                        <button type="submit" class="contact-btn"><p>送信する</p></button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                         <div class="col-sm-4">

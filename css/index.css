@@ -37,6 +37,7 @@ body{
 .main{
     height: 100%;
 }
+/*
 .container-intro{
     background-color: wheat;
     margin: auto;
@@ -54,9 +55,10 @@ body{
     margin: auto;
 }
 .footer{
-    /*background-color: teal;*/
+    background-color: teal;
     margin: auto;
 }
+*/
 .col{
     margin:15px;
 }
@@ -71,11 +73,14 @@ body{
     overflow: hidden;
     position: relative;
 }
+.myface{
+    height:240px;
+    border-radius: 50%;
+    width:100%;
+}
 .slide{
     list-style: none;
     width:10000px;
-
-
 }
 .slide-img{
     float:left;
@@ -148,6 +153,8 @@ body{
     font-weight: bolder;
     font-size: 20px;
 }
+
+
 /*質問jQuery練習*/
 .col-sm-10{
     margin: 0 auto;
@@ -171,6 +178,9 @@ body{
     font-family: serif;
     font-weight: bolder;
 }
+.text-questions::after{
+    content: '>';
+}
 .text-answer{
     margin: 10px;
     font-family: serif;
@@ -178,16 +188,16 @@ body{
     display: none;
 }
 /*質問jQuery練習ここまで*/
+
+
 .contact-text{
     font-family: serif;
     font-weight: bolder;
     font-size: 20px;
 }
+
 /*footerここから*/
-#icon{
-    /*display: inline-block;
-*/
-}
+
 .col-sm-4{
     text-align: center;
 }
@@ -195,9 +205,10 @@ body{
 
 
 /*モーダルはここから*/
+
 .contact-modal{
     position: fixed;
-    z-index: 100;
+    z-index: 100 ;
     top: 0px;
     right: 0px;
     bottom: 0px;
@@ -215,6 +226,7 @@ body{
     width: 350px;
     height: auto;
     text-align: center;
+    display: none;
 }
 .fa-times{
     position: absolute;
@@ -224,14 +236,50 @@ body{
     cursor: pointer;
 }
 
+/*
+.modal{
+    position: fixed;
+    z-index: 100 ;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: none;
+}
+#form-contact{
+    position: absolute;
+    top: 20%;
+    left: 34%;
+    background-color: #e6ecf0;
+    padding: 20px 0 40px;
+    border-radius: 10px;
+    width: 350px;
+    height: auto;
+    text-align: center;
+    display: none;
+}
+.fa-times{
+    position: absolute;
+    top: 40%;
+    right: 30%;
+    color: rgba(63, 60, 60, 0.46);
+    cursor: pointer;
+}
+*/
+
 
 /*お問い合わせ開始*/
 .card-form{
     margin: auto;
 }
+
+/*
 .contact-form{
     margin: auto;
 }
+*/
+
 .contact-title{
     font-weight: bolder;
     margin-bottom: 10px;

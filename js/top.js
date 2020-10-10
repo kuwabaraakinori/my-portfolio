@@ -15,12 +15,35 @@ $(function(){
         }
     });
     /*モーダル練習 */
+    
+    /*
+    $('.message').click(function(){
 
-    $('#button').click(function(){
         $('.contact-modal').fadeIn();
     });
-    $('.close.modal').click(function(){
+
+    $('.close-modal').click(function(){
+
         $('.contact-modal').fadeOut();
     });
+    */
+    
+    /*
+    $('.message').click(function(){
+        $('.modal').fadeIn();
+    });
+    $('.close.modal').click(function(){
+        $('.modal').fadeOut();
+    });
+    */
+   $('.message').click(function(){
+
+        $('.contact-modal').fadeIn();
+    });
+    $('.close-modal').click(function(){
+
+        $('.contact-modal').fadeOut();
+    });
+    
     
 });
